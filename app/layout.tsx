@@ -1,7 +1,7 @@
 import "./global.css";
 
-import SidePortal from "../components/SidePortal";
-import Header from "../components/Header";
+import SidePortal from "components/SidePortal";
+import Header from "components/Header";
 
 export default function RootLayout({
   children,

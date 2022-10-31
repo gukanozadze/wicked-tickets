@@ -6,11 +6,11 @@ import {
 } from "@heroicons/react/24/outline";
 import { FireIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
-import MutedTextContent from "./atoms/MutedTextContent";
+import MutedTextContent from "./Sidebar/MutedTextContent";
 
 export default function SidePortal() {
   return (
-    <div className="border border-[#333333] rounded-lg w-72">
+    <div className="border border-midnight rounded-lg w-72">
       <ul className="px-4 py-6 space-y-4">
         <li>
           <HomeIcon className="w-6 h-6 inline mr-3" />
@@ -37,14 +37,14 @@ export default function SidePortal() {
         <li>
           <Link href="/mytickets">Music Events</Link>
         </li>
-        <li className="text-[#0892d0] text-sm -mt-4">
+        <li className="text-appleBlue text-sm -mt-4">
           <Link href="/mytickets">See All</Link>
         </li>
       </ul>
 
       <MutedTextContent text={"Account Settings"} />
 
-      <ul className="px-4 py-4 space-y-4 text-[#393939]">
+      <ul className="px-4 py-4 space-y-4 text-midnight">
         <li>
           <UserCircleIcon className="w-6 h-6 inline mr-3" />
           <Link href="/">Profile</Link>

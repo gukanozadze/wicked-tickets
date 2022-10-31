@@ -154,6 +154,23 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@prisma/client@4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-4.5.0.tgz#f708549bee3da396d5741d846b4e4306b120210c"
+  integrity sha512-B2cV0OPI1smhdYUxsJoLYQLoMlLH06MUxgFUWQnHodGMX98VRVXKmQE/9OcrTNkqtke5RC+YU24Szxd04tZA2g==
+  dependencies:
+    "@prisma/engines-version" "4.5.0-43.0362da9eebca54d94c8ef5edd3b2e90af99ba452"
+
+"@prisma/engines-version@4.5.0-43.0362da9eebca54d94c8ef5edd3b2e90af99ba452":
+  version "4.5.0-43.0362da9eebca54d94c8ef5edd3b2e90af99ba452"
+  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-4.5.0-43.0362da9eebca54d94c8ef5edd3b2e90af99ba452.tgz#5b7fae294ee9bd9790d0e7b7a0b0912e4222ac08"
+  integrity sha512-o7LyVx8PPJBLrEzLl6lpxxk2D5VnlM4Fwmrbq0NoT6pr5aa1OuHD9ZG+WJY6TlR/iD9bhmo2LNcxddCMr5Rv2A==
+
+"@prisma/engines@4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@prisma/engines/-/engines-4.5.0.tgz#82df347a893a5ae2a67707d44772ba181f4b9328"
+  integrity sha512-4t9ir2SbQQr/wMCNU4YpHWp5hU14J2m3wHUZnGJPpmBF8YtkisxyVyQsKd1e6FyLTaGq8LOLhm6VLYHKqKNm+g==
+
 "@rushstack/eslint-patch@^1.1.3":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
@@ -476,10 +493,20 @@ chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+class-variance-authority@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/class-variance-authority/-/class-variance-authority-0.2.4.tgz#a9a4474e13943b506994f95fe670663135f7dba4"
+  integrity sha512-JJKn9ESARiNEBBRdTSPB9/SwaPb+wi19DMX/r8BVSyp1dxHa3JyUxa2GQjEVag5rBi+O3pL64UZ0XhnQsMz+3w==
+
 client-only@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
   integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
+
+clsx@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
+  integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
 
 color-convert@^2.0.1:
   version "2.0.1"
@@ -1648,6 +1675,13 @@ prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
+
+prisma@4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-4.5.0.tgz#361ae3f4476d0821b97645e5da42975a7c2943bb"
+  integrity sha512-9Aeg4qiKlv9Wsjz4NO8k2CzRzlvS3A4FYVJ5+28sBBZ0eEwbiVOE/Jj7v6rZC1tFW2s4GSICQOAyuOjc6WsNew==
+  dependencies:
+    "@prisma/engines" "4.5.0"
 
 prop-types@^15.8.1:
   version "15.8.1"

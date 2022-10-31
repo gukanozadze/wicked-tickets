@@ -11,7 +11,7 @@ export default function SearchBox() {
         />
         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
           <MagnifyingGlassIcon
-            className="h-5 w-5 text-[#6E6E6E]"
+            className="h-5 w-5 text-lightGray"
             aria-hidden="true"
           />
         </div>
