@@ -1,6 +1,6 @@
 "use client";
 import clsx from "clsx";
-import { format, formatRelative, addDays, parse } from "date-fns";
+import { format } from "date-fns";
 
 export default function HomeTicketShadow({ date }) {
   return (
@@ -11,7 +11,7 @@ export default function HomeTicketShadow({ date }) {
       )}
     >
       <div className="absolute right-2 bottom-0">
-        {date && format(date, "dd LLLL | y")}
+        {date && format(new Date(date), "dd LLLL | y")}
       </div>
     </div>
   );

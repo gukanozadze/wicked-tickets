@@ -1,9 +1,9 @@
 import Image from "next/image";
-import TicketName from "../../typography/TicketName";
 import clsx from "clsx";
-import HomeTicketShadow from "./HomeTicketShadow";
+import HomeTicketShadow from "../Home/HomeTicketShadow";
 import HomeTicketDate from "./HomeTicketDate";
 import TicketBanner from "components/Ticket/TicketBanner";
+import TicketName from "typography/TicketName";
 
 export default function HomeTicketCard({ title, src, date, fewLeft }: any) {
   return (
@@ -19,7 +19,7 @@ export default function HomeTicketCard({ title, src, date, fewLeft }: any) {
       <Image
         src={src}
         alt="psg-bayern"
-        className="object-cover rounded-lg "
+        className="object-cover bg-top rounded-lg "
         fill
         // width={500} automatically provided
         // height={500} automatically provided

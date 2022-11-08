@@ -1,7 +1,4 @@
-"use client";
-import Image from "next/image";
-import ticketLogo from "../public/ticket.png";
-import HomeTicketCard from "../components/Home/HomeTicketCard";
+import HomeTicketCard from "../components/Ticket/HomeTicketCard";
 
 import PSGVSBAYERN from "/public/psg-bayern.jpg";
 import GEORGIAMACEDONIA from "/public/georgia-macedonia.jpeg";
@@ -50,7 +47,7 @@ export default function Page() {
     <div>
       <h1 className="text-3xl font-bold">All Tickets</h1>
 
-      <div className="grid grid-cols-3 gap-4 gap-y-8 mt-6 ">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-8 mt-6 ">
         {data.map((item) => (
           <HomeTicketCard key={item.id} {...item} />
         ))}
