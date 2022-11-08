@@ -1,51 +1,59 @@
+"use client";
 import Image from "next/image";
 import ticketLogo from "../public/ticket.png";
+import HomeTicketCard from "../components/Home/HomeTicketCard";
+
+import PSGVSBAYERN from "/public/psg-bayern.jpg";
+import GEORGIAMACEDONIA from "/public/georgia-macedonia.jpeg";
+import MEGADAVCURAVZGVAS from "/public/me-gadavcurav-zgvas.jpeg";
+import EMINEMSNOOPDOGG from "/public/eminem-snoopdogg.jpeg";
+import DENMARKGEORGIA from "/public/denmark-georgia.jpeg";
+import DESIGNSUMMIT from "/public/design-summit.jpeg";
 
 export default function Page() {
   const data = [
     {
       id: 1,
-      title: "Super Cup 2022",
+      title: "Bayern - PSG | Alianz Arena",
+      src: PSGVSBAYERN,
+      date: new Date("2023-02-14"),
+      fewLeft: true,
     },
     {
       id: 2,
-      title: "Gotavista MRX99 at Naxalovka",
+      title: "Macedonia - Georgia | Boris Paichadze Stadium",
+      src: GEORGIAMACEDONIA,
+      date: new Date("2023-05-23"),
     },
     {
       id: 3,
-      title: "officia porro iure quia iusto qui ipsa ut modi",
+      title: "Me Gadavcurav Zgvas | Sadgac",
+      src: MEGADAVCURAVZGVAS,
+      date: new Date("2022-12-12"),
     },
     {
       id: 4,
-      title: "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
+      title: "Eminem & Snoop Dog, end of era concert | Bassiani",
+      src: EMINEMSNOOPDOGG,
+      date: new Date("2023-01-08"),
     },
-    {
-      id: 5,
-      title: "natus nisi omnis corporis facere molestiae rerum in",
-    },
+
     {
       id: 6,
-      title: "accusamus ea aliquid et amet sequi nemo",
+      title: "Digital Summit TOUCH22 | Rustaveli Theatre  ",
+      src: DESIGNSUMMIT,
+      date: new Date("2022-12-07"),
     },
   ];
 
   return (
     <div>
       <h1 className="text-3xl font-bold">All Tickets</h1>
-      <div>
-        {data.map(({ title, id }) => {
-          return (
-            <div key={id}>
-              <Image
-                src={"https://source.unsplash.com/random/800x600"}
-                alt="title"
-                width={75}
-                height={75}
-              />
-              <div>{title}</div>
-            </div>
-          );
-        })}
+
+      <div className="grid grid-cols-3 gap-4 gap-y-8 mt-6 ">
+        {data.map((item) => (
+          <HomeTicketCard key={item.id} {...item} />
+        ))}
       </div>
     </div>
   );

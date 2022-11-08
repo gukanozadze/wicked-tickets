@@ -12,13 +12,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        bgColor: "#222831",
+        borderColor: "#393E46",
+        accentColor: "#00ADB5",
+        accentColorLight: "#EEEEEE",
         brand: "#E94560",
-        dark: "#16213E",
-        midnight: "#0F3460",
-        purple: "#3f3cbb",
-        borderColor: "#333333",
         appleBlue: "#0892d0",
-        lightGray: "6E6E6E",
+      },
+      spacing: {
+        5: "20px",
+        1: "2px",
       },
     },
   },

@@ -1,6 +1,6 @@
 import "./global.css";
 
-import SidePortal from "components/SidePortal";
+import SidePortal from "components/Sidebar/SideBar";
 import Header from "components/Header";
 
 export default function RootLayout({
@@ -11,13 +11,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <title>Wicked Tickets</title>
       </head>
-      <body>
+      <body className="bg-bgColor">
         <Header />
-        <div className="max-w-[1920px] mx-auto flex gap-8 px-12">
+        <div className="max-w-[1920px] mx-auto flex gap-4 px-2 md:gap-8 md:px-12">
           <SidePortal />
-          <div>{children}</div>
+          <div className="flex-1">{children}</div>
         </div>
       </body>
     </html>

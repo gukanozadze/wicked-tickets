@@ -4,8 +4,8 @@ import SearchBox from "./SearchBox";
 
 export default function Header() {
   return (
-    <div className="mb-8 border-b border-midnight">
-      <div className="px-12  flex items-center max-w-[1920px] mx-auto">
+    <div className="mb-8 border-b border-accentColor">
+      <div className="px-12 flex items-center max-w-[1920px] mx-auto">
         <Image
           className="rotate-45"
           src={ticketLogo}
