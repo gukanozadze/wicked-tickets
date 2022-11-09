@@ -1,4 +1,4 @@
-export default async function Head() {
+export default function Head() {
   return (
     <>
       {/* <!-- Primary Meta Tags --> */}
@@ -11,6 +11,7 @@ export default async function Head() {
       />
       {/* <!-- Open Graph / Facebook --> */}
       <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="WickedTickets" />
       <meta property="og:url" content="https://wicked-tickets.vercel.app/" />
       <meta property="og:title" content="WickedTickets — Buy, Sell and Enjoy" />
       <meta
@@ -19,12 +20,12 @@ export default async function Head() {
       />
       <meta
         property="og:image"
-        content="https://images.indianexpress.com/2020/08/Bayern-Munich-vs-PSG-ucl-final.jpg"
+        content="https://wicked-tickets.vercel.app/psg-bayern.jpg"
       />
       {/* <!-- Twitter --> */}
       <meta
         property="twitter:card"
-        content="https://images.indianexpress.com/2020/08/Bayern-Munich-vs-PSG-ucl-final.jpg"
+        content="https://wicked-tickets.vercel.app/psg-bayern.jpg"
       />
       <meta
         property="twitter:url"
@@ -40,7 +41,7 @@ export default async function Head() {
       />
       <meta
         property="twitter:image"
-        content="https://images.indianexpress.com/2020/08/Bayern-Munich-vs-PSG-ucl-final.jpg"
+        content="https://wicked-tickets.vercel.app/psg-bayern.jpg"
       />
     </>
   );
