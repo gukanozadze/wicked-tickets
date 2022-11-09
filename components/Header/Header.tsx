@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ticketLogo from "../public/ticket.png";
-import SearchBox from "./SearchBox";
+import SearchBox from "../SearchBox";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { Bars3BottomLeftIcon, BellIcon } from "@heroicons/react/24/outline";
@@ -58,7 +58,7 @@ export default function Header({ sidebarOpen, setSidebarOpen }: Props) {
           </button>
 
           {/* Profile dropdown */}
-          <Menu as="div" className="relative ml-3">
+          <Menu as="div" className="relative ml-3 z-50">
             <div>
               <Menu.Button className="flex max-w-xs items-center rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                 <span className="sr-only">Open user menu</span>
@@ -78,7 +78,7 @@ export default function Header({ sidebarOpen, setSidebarOpen }: Props) {
               leaveFrom="transform opacity-100 scale-100"
               leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-bgColor py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <Menu.Items className="absolute right-0 z-50 mt-2 w-48 origin-top-right rounded-md bg-bgColor py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 {userNavigation.map((item) => (
                   <Menu.Item key={item.name}>
                     {({ active }) => (
@@ -86,7 +86,7 @@ export default function Header({ sidebarOpen, setSidebarOpen }: Props) {
                         href={item.href}
                         className={clsx(
                           active ? "bg-gray-100" : "",
-                          "block py-2 px-4 text-sm text-gray-700"
+                          "block py-2 px-4 text-sm text-accentColor"
                         )}
                       >
                         {item.name}

@@ -140,7 +140,7 @@ export default function SideBarNew({ sidebarOpen, setSidebarOpen }: Props) {
                   href={item.href}
                   className={clsx(
                     pathname === item.href
-                      ? "bg-gray-100 text-gray-900"
+                      ? "bg-brand text-white"
                       : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
                     "group rounded-md py-2 px-2 flex items-center text-sm font-medium"
                   )}
@@ -148,7 +148,7 @@ export default function SideBarNew({ sidebarOpen, setSidebarOpen }: Props) {
                   <item.icon
                     className={clsx(
                       pathname === item.href
-                        ? "text-gray-500"
+                        ? "text-white"
                         : "text-gray-400 group-hover:text-gray-500",
                       "mr-3 flex-shrink-0 h-6 w-6"
                     )}

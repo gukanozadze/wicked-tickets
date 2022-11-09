@@ -2,7 +2,7 @@
 import "./global.css";
 
 import { useState } from "react";
-import Header from "components/Header";
+import Header from "components/Header/Header";
 import SideBarNew from "components/Sidebar/SideBarNew";
 
 export default function RootLayout({

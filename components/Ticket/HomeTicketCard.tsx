@@ -4,16 +4,18 @@ import HomeTicketShadow from "./HomeTicketShadow";
 import HomeTicketDate from "./HomeTicketDate";
 import TicketBanner from "components/Ticket/TicketBanner";
 import TicketName from "typography/TicketName";
+import Link from "next/link";
 
 export default function HomeTicketCard({ title, src, date, fewLeft }: any) {
   return (
-    <div
+    <Link
+      href="/ticket/3"
       className={clsx(
-        "bg-brand h-48 rounded-lg relative block cursor-pointer",
-        "text-brand z-20 hover:text-white  transition-all"
+        "block bg-brand h-48 rounded-lg relative block cursor-pointer",
+        "text-brand  hover:text-white  transition-all"
       )}
     >
-      <TicketName className="absolute left-0 bottom-5 px-4  z-20">
+      <TicketName className="absolute left-0 bottom-5 px-4  z-10">
         {title}
       </TicketName>
       <Image
@@ -30,6 +32,6 @@ export default function HomeTicketCard({ title, src, date, fewLeft }: any) {
       <HomeTicketShadow />
       <HomeTicketDate date={date} />
       {fewLeft && <TicketBanner />}
-    </div>
+    </Link>
   );
 }
