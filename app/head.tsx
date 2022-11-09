@@ -1,27 +1,42 @@
 export default async function Head() {
   return (
     <>
-      <title>Wicked Tickets</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-      <meta name="keywords" content="ticket, tickets, buy" />
-
-      <meta property="og:title" content="European Ticket Platform" />
-      <meta property="og:type" content="e-commerce" />
+      {/* <!-- Primary Meta Tags --> */}
+      <title>European Ticket Platform</title>
+      <meta name="title" content="European Ticket Platform" />
       <meta
-        property="og:image"
-        content="https://images.indianexpress.com/2020/08/Bayern-Munich-vs-PSG-ucl-final.jpg"
+        name="description"
+        content="Buy tickets cheap with security in mind on safe platform."
       />
-      <meta property="og:url" content="https://wicked-tickets.vercel.app/" />
 
+      {/* <!-- Open Graph / Facebook --> */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://wicked-tickets.vercel.app/" />
+      <meta property="og:title" content="European Ticket Platform" />
       <meta
         property="og:description"
         content="Buy tickets cheap with security in mind on safe platform."
       />
-      <meta property="og:site_name" content="Wicked Tickets, Inc." />
+      <meta
+        property="og:image"
+        content="https://images.indianexpress.com/2020/08/Bayern-Munich-vs-PSG-ucl-final.jpg"
+      />
 
-      <meta name="twitter:image:alt" content="Alt text for image" />
-      <meta name="twitter:card" content="summary_large_image" />
+      {/* <!-- Twitter --> */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta
+        property="twitter:url"
+        content="https://wicked-tickets.vercel.app/"
+      />
+      <meta property="twitter:title" content="European Ticket Platform" />
+      <meta
+        property="twitter:description"
+        content="Buy tickets cheap with security in mind on safe platform."
+      />
+      <meta
+        property="twitter:image"
+        content="https://images.indianexpress.com/2020/08/Bayern-Munich-vs-PSG-ucl-final.jpg"
+      />
     </>
   );
 }
