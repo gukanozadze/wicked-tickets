@@ -3,7 +3,6 @@ export default async function Head() {
     <>
       {/* <!-- Primary Meta Tags --> */}
       <title>European Ticket Platform</title>
-      Meta Tags — Preview, Edit and Generate
       <meta name="title" content="WickedTickets — Buy, Sell and Enjoy" />
       <meta
         name="description"
