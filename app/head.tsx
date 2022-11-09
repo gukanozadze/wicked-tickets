@@ -6,14 +6,14 @@ export default function Head() {
       <meta name="name" content="WickedTickets — Buy, Sell and Enjoy" />
       <meta
         name="description"
-        content=" With WickedTickets you can 'securely' buy tickets cheap and beware of fake re-sellers from platforms like Facebook and Instagram."
+        content=" With WickedTickets you can securely buy tickets cheap and beware of fake re-sellers from platforms like Facebook and Instagram."
       />
 
       {/* <!-- Google / Search Engine Tags --> */}
       <meta itemProp="name" content="WickedTickets — Buy, Sell and Enjoy" />
       <meta
         itemProp="description"
-        content=" With WickedTickets you can 'securely' buy tickets cheap and beware of fake re-sellers from platforms like Facebook and Instagram."
+        content=" With WickedTickets you can securely buy tickets cheap and beware of fake re-sellers from platforms like Facebook and Instagram."
       />
       <meta
         itemProp="image"
@@ -26,7 +26,7 @@ export default function Head() {
       <meta property="og:title" content="WickedTickets — Buy, Sell and Enjoy" />
       <meta
         property="og:description"
-        content=" With WickedTickets you can 'securely' buy tickets cheap and beware of fake re-sellers from platforms like Facebook and Instagram."
+        content=" With WickedTickets you can securely buy tickets cheap and beware of fake re-sellers from platforms like Facebook and Instagram."
       />
       <meta
         property="og:image"
@@ -41,7 +41,7 @@ export default function Head() {
       />
       <meta
         name="twitter:description"
-        content=" With WickedTickets you can 'securely' buy tickets cheap and beware of fake re-sellers from platforms like Facebook and Instagram."
+        content=" With WickedTickets you can securely buy tickets cheap and beware of fake re-sellers from platforms like Facebook and Instagram."
       />
       <meta
         name="twitter:image"
