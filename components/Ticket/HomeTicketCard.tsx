@@ -1,6 +1,6 @@
 import Image from "next/image";
 import clsx from "clsx";
-import HomeTicketShadow from "../Home/HomeTicketShadow";
+import HomeTicketShadow from "./HomeTicketShadow";
 import HomeTicketDate from "./HomeTicketDate";
 import TicketBanner from "components/Ticket/TicketBanner";
 import TicketName from "typography/TicketName";
