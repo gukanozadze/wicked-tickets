@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import ticketLogo from "../public/ticket.png";
 import SearchBox from "../SearchBox";
@@ -12,22 +13,10 @@ const userNavigation = [
   { name: "Settings", href: "#" },
   { name: "Sign out", href: "#" },
 ];
-interface Props {
-  sidebarOpen: boolean;
-  setSidebarOpen: (value: boolean) => void;
-}
 
-export default function Header({ sidebarOpen, setSidebarOpen }: Props) {
+export default function Header() {
   return (
-    <div className="sticky top-0 z-10 flex h-16 flex-shrink-0 border-b border-accentColor bg-bgColor">
-      <button
-        type="button"
-        className="border-r border-accentColor px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
-        onClick={() => setSidebarOpen(true)}
-      >
-        <span className="sr-only">Open sidebar</span>
-        <Bars3BottomLeftIcon className="h-6 w-6" aria-hidden="true" />
-      </button>
+    <div className="sticky top-0 left-0 z-20 flex h-16 flex-shrink-0 border-b border-accentColor bg-bgColor">
       <div className="flex flex-1 justify-between px-4 md:px-0">
         <div className="flex flex-1">
           <form className="flex w-full md:ml-0" action="#" method="GET">

@@ -1,4 +1,5 @@
-import { Fragment } from "react";
+"use client";
+import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import {
   XMarkIcon,
@@ -21,8 +22,9 @@ const navigation = [
   { name: "My Tickets", href: "/mytickets", icon: TicketIcon },
 ];
 
-export default function SideBarNew({ sidebarOpen, setSidebarOpen }: Props) {
+export default function SideBar() {
   const pathname = usePathname();
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <>
