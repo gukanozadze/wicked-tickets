@@ -1,8 +1,10 @@
 export default function Head() {
   return (
     <>
-      {/* <!-- HTML Meta Tags --> */}
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>WickedTickets — Buy, Sell and Enjoy</title>
+
+      {/* <!-- HTML Meta Tags --> */}
       <meta name="name" content="WickedTickets — Buy, Sell and Enjoy" />
       <meta
         name="description"
