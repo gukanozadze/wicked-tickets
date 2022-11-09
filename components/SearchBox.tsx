@@ -3,7 +3,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 export default function SearchBox() {
   return (
     <div>
-      <div className="rounded-xl shadow-sm mx-auto w-72 relative">
+      <div className="rounded-xl shadow-sm mx-auto w-64 md:w-72 relative">
         <input
           type="text"
           className="px-4 py-2 block w-full bg-transparent rounded-xl border border-accentColor text-accentColor placeholder-accentColor sm:text-sm"

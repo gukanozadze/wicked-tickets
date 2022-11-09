@@ -45,14 +45,14 @@ const NavigationSecondaryRoutes = [
 export default function SideBar() {
   return (
     <div>
-      <div className="border border-accentColor rounded-lg w-48 md:w-72">
+      <div className="hidden md:block border border-accentColor rounded-lg w-48 md:w-72">
         <div className="px-2 md:px-4 py-6 space-y-2">
           {NavigationMainRoutes.map((props) => (
             <NavLink key={props.title} {...props} />
           ))}
         </div>
 
-        <MutedTextContent text={"Popular By Category"} />
+        <MutedTextContent text="Popular By Category" />
 
         <div className="p-2 md:p-4 space-y-2 text-lg ">
           {NavigationSecondaryRoutes.map((props) => (
