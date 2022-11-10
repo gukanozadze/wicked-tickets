@@ -51,6 +51,9 @@ export default function Page() {
         {data.map((item) => (
           <HomeTicketCard key={item.id} {...item} />
         ))}
+        {data.map((item) => (
+          <HomeTicketCard key={item.id} {...item} />
+        ))}
       </div>
     </div>
   );
